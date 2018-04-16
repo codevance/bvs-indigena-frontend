@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 0.15rem;
+    text-transform: uppercase;
+}
+
+.btn-success {
+    background-color: $green-strong;
+    border-color: $green-strong;
+}
+
+.btn-warning {
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white !important;
+    }
+}

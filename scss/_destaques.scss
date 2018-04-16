@@ -1,0 +1,113 @@
+.destaques {
+    margin-top: 100px;
+
+    .destaques-title {
+        text-align: center;
+        border-bottom: 0.5px solid #90AA83;
+        padding-bottom: 7px;
+        margin-bottom: 50px;
+
+        h2 {
+            text-transform: uppercase;
+            color: #71B42D;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        
+        .line-bottom {
+            &:after {
+                margin: 50px 0 0 -120px;
+            }
+        }
+    }
+
+    .featured {
+        background-image: url(../images/destaques1.svg);
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        padding-top: 377px;
+
+        .featured-content {
+            background-color: #4C6438;
+            opacity: 0.89;
+            padding: 0 25px;
+            color: #fff;
+        }
+    }
+
+    .fc-title {
+        margin-top: 25px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .fc-text {
+        font-size: 15px;
+        max-width: 85%;
+        padding-bottom: 25px;
+        margin-bottom: 0;
+        margin-top: 15px;
+
+        a {
+            color: #71B42D;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+    }
+
+    .post {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 0.5px solid #90AA83;
+
+        .fc-title {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .fc-text {
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .pagination {
+        .page-item {
+            color: #90AA83;
+            font-size: 14px;
+            padding: 0 2px;
+            
+            &:first-child,
+            &:last-child {
+                .page-link {
+                    color: #D2DDCE;
+                    border: none;
+                    font-size: 22px;
+                    margin-top: -6px;
+        
+                    &:hover {
+                        color: #71B42D;
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            .page-link {
+                color: #90AA83;
+                font-size: 14px;
+                border: none;
+                padding: 6px 4px;
+
+                &:focus {
+                    box-shadow: none;
+                }
+                
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
