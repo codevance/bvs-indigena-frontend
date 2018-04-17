@@ -17,6 +17,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.line-top {
+    &:after {
+        color: #891812;
+        border-bottom: 10px solid;
+        top: -20px;
+        left: 0;
+        position: absolute;
+        content: " ";
+        width: 40px;
+        border-radius: 15%;
+    }
+}
+
 .marking {
     color: $white;
     font-size: 10px;

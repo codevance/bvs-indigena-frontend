@@ -1,0 +1,35 @@
+.post {
+    width: 70%;
+    margin: 100px auto 150px auto;
+    
+    .post-text {
+        text-align: justify;
+        margin-top: 20px;
+        font-size: 16px;
+        color: #666A63;
+    }
+    
+    .figure {
+        width: 100%;
+        height: auto;
+        
+        .figure-caption {
+            color: #9fb694;
+            font-size: 12px;
+        }
+    }
+    
+    .post-subtitle {
+        color: #4c6438;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 40px 0 0 0;
+    }
+}
+
+.post-title {
+    font-size: 22px;
+    color: #4c6438;
+    font-weight: 700;
+    position: relative;
+}

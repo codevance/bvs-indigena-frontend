@@ -3,16 +3,15 @@
 @import "../node_modules/owl.carousel2/src/scss/owl.carousel.scss";
 
 // globals
-// @import "variables";
-// @import "generals";
+@import "variables";
+@import "generals";
 
-// @import "buttons";
-// @import "navbar";
-// @import "forms";
-
-// @import "destaques";
-// @import "partners";
-// @import "etnias";
-// @import "footer";
-// @import "theme";
-// @import "hero";
+@import "theme-page";
+@import "destaques";
+@import "partners";
+@import "etnias";
+@import "footer";
+@import "theme";
+@import "hero";
+@import "post";
+@import "map";
