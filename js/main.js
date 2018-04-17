@@ -1,3 +1,10 @@
+import 'jquery';
+import 'popper.js';
+import 'bootstrap';
+import 'owl.carousel2';
+
+import './../scss/main.scss';
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         loop:true,
