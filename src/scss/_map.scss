@@ -5,6 +5,7 @@
     margin-right: 400px;
     width: auto;
     height: 450px;
+    position: relative;
 
     .sm-title {
         position: relative;
@@ -25,22 +26,36 @@
     }
 
     .photo-info {
-        position: relative;
-        top: -440px;
-        right: -490px;
         width: 450px !important;
+        position: absolute;
+        top: 50px;
+        right: -250px;
     }
 
     .sm-info {
-        background-color: #95b515;
-        position: relative;
-        top: -849px;
-        right: -725px;
+        background-image: url(../images/map2.svg);
+        background-size: cover;
         padding: 50px 30px 120px 80px;
         width: 450px;        
         color: white;
         font-size: 14px;
         text-align: left;
+        position: absolute;
+        top: 50px;
+        z-index: 1;
+        right: -250px;
+        
+        &:after {
+            background-color: #95b515;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0.87;
+            z-index: -1;
+        }
 
         .info-title {
             color: #ccff00;

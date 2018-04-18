@@ -26,11 +26,24 @@
             background-image: url(../images/theme.svg);
             width: 150px !important;
             height: 160px;
-            opacity: 0.5;
+
+            &:after {
+                background-color: darkgray;
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0.5;
+                z-index: -1;
+            }
 
             &:hover {
-                transition: 1s;
-                opacity: 0.9;
+                &:after {
+                    transition: 1s;
+                    opacity: 0;
+                }
             }
             
             .own-title {
