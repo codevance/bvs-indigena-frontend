@@ -4,6 +4,22 @@
     margin-top: 50px;
     height: auto;
     width: 100%;
+    z-index: 1;
+    position: relative;
+    background-position: center;
+
+    &:after {
+        @include gradient-x(#318107, #194104);
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: green;
+        opacity: 0.75;
+        z-index: -1;
+    }
 
     img {
         margin-top: -10px;

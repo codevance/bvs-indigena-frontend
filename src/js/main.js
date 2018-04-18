@@ -1,9 +1,12 @@
+// css
+import '../scss/main.scss';
+
+// js
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
 import 'owl.carousel2';
-
-import './../scss/main.scss';
+import './global-svg.js';
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
