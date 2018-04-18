@@ -1,17 +1,10 @@
-input,
-select,
-textarea {
-    &.form-control {
-        border-radius: 0;
-        box-shadow: none;
-        border: none;
-        padding: 1rem;
-        font-size: 18px;
-        color: #90AA83;
-    }
-}
-
-select {
-    appearance: none;
-    height: auto !important;
+.form-control {
+    border-radius: 3px !important;
+    height: 49px !important;
+    font-size: 18px;
+    box-shadow: none;
+    padding: 5px 30px;
+    background-color: #fff;
+    border: none;
+    color: #90AA83;
 }
