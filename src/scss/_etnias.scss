@@ -16,6 +16,8 @@
         font-size: 30px;
         margin: 0 auto;
     }
+}
+
 
     .owl-carousel {
         padding-top: 70px;
@@ -45,45 +47,50 @@
         }
 
         .owl-nav {
-            .owl-prev {
+            position: absolute;
+            top: 59%;
+            left: 0;
+            right: 0;
+
+            > .owl-next,
+            > .owl-prev {
                 position: absolute;
-                font-size: 35px;
+                font-size: 20px;
                 color: $white;
+                bottom: auto;
+            }
+
+            .owl-prev {
                 left: -30px;
-                top: 80px;
-                bottom: 0;
 
-                &:hover {
-                    background: transparent;
-                    color: $orange-vivid;
-                }
+        //         &:hover {
+        //             background: transparent;
+        //             color: $orange-vivid;
+        //         }
 
-                &:focus {
-                    outline: transparent;
-                }
+        //         &:focus {
+        //             outline: transparent;
+        //         }
             }
 
             .owl-next {
-                position: absolute;
-                font-size: 35px;
-                color: $white;
+        //         position: absolute;
+        //         font-size: 35px;
+        //         color: $white;
                 right: -30px;
-                top: 80px;
-                bottom: 0;
+        //         top: 80px;
+        //         bottom: 0;
 
-                &:hover {
-                    background: transparent;
-                    color: $orange-vivid;
-                }
+        //         &:hover {
+        //             background: transparent;
+        //             color: $orange-vivid;
+        //         }
 
-                &:focus {
-                    outline: transparent;
-                }
+        //         &:focus {
+        //             outline: transparent;
+        //         }
             }
-        }
 
-        .owl-dots {
-            display: none;
         }
     }
-}
+    

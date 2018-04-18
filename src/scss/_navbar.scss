@@ -1,36 +1,22 @@
-.navbar-nav {
-    .nav-item {
-        .nav-link {
-            color: $green-dark;
-
-            &:hover {
-                color: $green-strong;
-            }
-        }
-    }
-
-    .active {
-        .nav-link {
-            color: $green-strong !important;
-        }
-    }
-}
-
-.footer {
-    .navbar {
-        background-color: transparent;
-    }
+nav.main-menu {
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(black, 0.1);
 
     .navbar-nav {
-        font-size: 13px;
+        .nav-item {
+            font-size: 15px;
 
-        .nav-link {
-            color: #90AA83;
-        }
-
-        .active {
             .nav-link {
-                color: #90AA83 !important;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                color: #318107;
+            }
+    
+            &.active,
+            &:hover {
+                .nav-link {
+                    color: #71B42D;
+                }
             }
         }
     }
