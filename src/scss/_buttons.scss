@@ -2,8 +2,10 @@
     border-radius: 0.15rem;
     text-transform: uppercase;
     height: 49px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .btn-success {
@@ -12,9 +14,8 @@
 }
 
 .btn-warning {
+    background-color: #EDC900;
     color: $white;
-    font-weight: 700;
-    font-size: 16px;
 
     &:hover,
     &:focus,
