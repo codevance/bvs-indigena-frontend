@@ -42,3 +42,24 @@
         text-align: center;
     }    
 }
+
+.navbar-footer {
+    background-color: transparent;
+
+    .navbar-nav {
+        .nav-item {
+            font-size: 13px;
+
+            .nav-link {
+                color: $green-grayish;
+            }
+
+            &:hover,
+            &.active {
+                .nav-link {
+                    color: $green-strong;
+                }
+            }
+        }
+    }
+}

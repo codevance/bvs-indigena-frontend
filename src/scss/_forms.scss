@@ -1,3 +1,17 @@
-.form-control{
-    border-radius: 0.15rem;
+input,
+select,
+textarea {
+    &.form-control {
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        padding: 1rem;
+        font-size: 18px;
+        color: #90AA83;
+    }
+}
+
+select {
+    appearance: none;
+    height: auto !important;
 }
