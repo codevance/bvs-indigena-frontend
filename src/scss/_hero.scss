@@ -9,7 +9,7 @@
     background-position: center;
 
     &:after {
-        @include gradient-x(#318107, #194104);
+        @include gradient-y(#318107, #194104);
         content: '';
         position: absolute;
         left: 0;

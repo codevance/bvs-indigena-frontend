@@ -4,11 +4,6 @@
 
 process.noDeprecation = true;
 
-const localServer = {
-  path: 'localhost/bvs',
-  port: 3000
-};
-
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -33,12 +28,6 @@ const config = {
           fallback: 'style-loader',
           use: [
             'css-loader',
-            // {
-            //   loader: 'css-loader',
-            //   options: {
-            //     minimize: true
-            //   }
-            // },
             'postcss-loader',
             'sass-loader']
         })
@@ -79,8 +68,6 @@ const config = {
   plugins: [
     new ExtractTextPlugin('css/[name].css'),
     new BrowserSyncPlugin({
-      proxy: localServer.path,
-      port: localServer.port,
       files: [],
       ghostMode: {
         clicks: false,
@@ -101,9 +88,6 @@ const config = {
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default']
     }),
-    // new MinifyPlugin({}, {
-    //   'comments': false,
-    // })
   ]
 };
 

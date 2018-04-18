@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "production": "cross-env NODE_ENV=production webpack"
+    "production": "cross-env NODE_ENV=production webpack",
+    "start:dev": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -37,6 +38,8 @@
     "uglify-es": "^3.0.21",
     "url-loader": "^0.5.9",
     "webpack": "^3.0.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^2.0.0",
     "webpack-uglifyes-plugin": "0.0.2"
   }
 }
