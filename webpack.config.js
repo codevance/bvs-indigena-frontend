@@ -9,13 +9,10 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const UglifyJSPlugin = require('webpack-uglifyes-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MinifyPlugin = require("babel-minify-webpack-plugin");
 
 const config = {
-  entry: {
-    app: './src/js/main.js'
-  },
+  entry: './src/js/main.js',
   output: {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist')
@@ -60,28 +57,8 @@ const config = {
       }
     ]
   },
-  resolve: {
-    alias: {
-      vue: 'vue/dist/vue.js'
-    }
-  },
   plugins: [
     new ExtractTextPlugin('css/[name].css'),
-    new BrowserSyncPlugin({
-      files: [],
-      ghostMode: {
-        clicks: false,
-        location: false,
-        forms: false,
-        scroll: false
-      },
-      injectChanges: true,
-      logFileChanges: true,
-      logLevel: 'debug',
-      logPrefix: 'wepback',
-      notify: true,
-      reloadDelay: 0
-    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
