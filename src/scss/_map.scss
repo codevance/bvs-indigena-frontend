@@ -1,0 +1,56 @@
+.section-map {
+    background-color: #b2ed54;
+    margin-top: 120px;
+    text-align: center;
+    margin-right: 400px;
+    width: auto;
+    height: 450px;
+
+    .sm-title {
+        position: relative;
+        top: -52px;
+        color: #95b515;
+        font-size: 35px;
+        font-weight: 700;
+        margin-right: -400px;
+
+        &:after {
+            margin-left: -225px;
+        }        
+    }
+
+    img {
+        width: 480px;
+        height: auto;
+    }
+
+    .photo-info {
+        position: relative;
+        top: -440px;
+        right: -490px;
+        width: 450px !important;
+    }
+
+    .sm-info {
+        background-color: #95b515;
+        position: relative;
+        top: -849px;
+        right: -725px;
+        padding: 50px 30px 120px 80px;
+        width: 450px;        
+        color: white;
+        font-size: 14px;
+        text-align: left;
+
+        .info-title {
+            color: #ccff00;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .info-list {
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+    }
+}

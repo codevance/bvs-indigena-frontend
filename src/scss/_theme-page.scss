@@ -1,0 +1,58 @@
+.theme-content {
+    margin: 100px auto 80px auto;
+    width: 70%;
+
+    .theme-header {
+        border-bottom: 0.5px solid #90AA83;
+
+        .theme-title {
+            color: #EDC900;
+            font-size: 35px;
+            font-weight: 700;
+            display: inline-block;
+
+            &:after {
+                margin: 51px 0 0 -120px;
+            }
+        }
+
+        .a-z {
+            .page-item {
+                padding: 0;
+
+                &:first-child,
+                &:last-child {
+                    .page-link {
+                        color: #90AA83;
+                        font-size: 16px;
+                        margin-top: 0px;
+
+                        &:hover {
+                            background-color: #e9ecef;
+                        }
+                    }
+                }
+
+                .page-link {
+                    font-size: 16px;
+                    border: none;
+                    padding: 5px;
+
+                    &:hover {
+                        background-color: #e9ecef;
+                        transition: 0.6s;
+                    }
+                }
+
+                .active {
+                    color: #448C1E;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    nav {
+        margin: auto;
+    }
+}

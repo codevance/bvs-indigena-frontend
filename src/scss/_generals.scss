@@ -1,0 +1,48 @@
+body {
+    font-family: $primary
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary
+}
+
+.line-bottom {
+    &:after {
+        background-color: $yellow-light;
+        border-bottom: 4px solid;
+        margin: 50px 0 0 -78px;
+        position: absolute;
+        content: " ";
+        width: 40px;
+    }
+}
+
+.line-top {
+    &:after {
+        color: #891812;
+        border-bottom: 10px solid;
+        top: -20px;
+        left: 0;
+        position: absolute;
+        content: " ";
+        width: 40px;
+        border-radius: 15%;
+    }
+}
+
+.marking {
+    color: $white;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 2px 5px;
+}
+
+.published {
+    font-size: 12px;
+    color: #9FB694;
+}
+
+// Style
+.border-none {
+    border: transparent !important;
+}
