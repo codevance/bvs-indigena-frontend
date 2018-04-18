@@ -12,7 +12,8 @@
             display: inline-block;
 
             &:after {
-                margin: 51px 0 0 -120px;
+                left: 5%;
+                transform: translateX(0);
             }
         }
 

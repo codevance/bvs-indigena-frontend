@@ -1,9 +1,9 @@
 select.form-control {
     appearance: none;
-    background-image: url(https://image.flaticon.com/icons/svg/32/32195.svg);
-    background-size: 15px;
+    background-image: url(../images/select.png);
+    background-size: 35px;
     background-repeat: no-repeat;
-    background-position: 98% 50%;
+    background-position: 97% -266%;
 }
 
 .form-control {
@@ -13,10 +13,4 @@ select.form-control {
     box-shadow: none;
     padding: 5px 30px;
     background-color: #fff;
-}
-
-select.form-control {
-    appearance: none;
-    background-image: url(../images/select.png);
-
 }

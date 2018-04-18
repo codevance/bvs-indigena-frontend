@@ -6,6 +6,7 @@
     margin-top: 100px;
     height: auto;
     width: 100%;
+    position: relative;
 
     .se-title {
         text-transform: uppercase;
@@ -15,6 +16,12 @@
         font-weight: 700;
         font-size: 30px;
         margin: 0 auto;
+    }
+
+    .line-bottom {
+        &:after {
+            top: 30%;
+        }
     }
 }
 

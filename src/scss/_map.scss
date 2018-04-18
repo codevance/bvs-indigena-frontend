@@ -8,15 +8,17 @@
     position: relative;
 
     .sm-title {
-        position: relative;
-        top: -52px;
+        position: absolute;
+        top: -12%;
+        left: 50%;
+        right: 0;
         color: #95b515;
         font-size: 35px;
         font-weight: 700;
-        margin-right: -400px;
+        padding-bottom: 13px;
 
         &:after {
-            margin-left: -225px;
+            border-radius: 5px;
         }        
     }
 

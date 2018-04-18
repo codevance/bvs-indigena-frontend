@@ -3,10 +3,13 @@
     
     .partners-title {
         text-align: center;
-        font-size: 20px;
         padding-bottom: 10px;
-        border-bottom: 0.5 solid #90AA83;
         margin-bottom: 40px;
+        border-bottom: 0.5px solid #90AA83;
+        
+        h2 {
+            font-size: 20px;
+        }
     }
     
     .partners-item {
