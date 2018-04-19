@@ -14,6 +14,8 @@ $(document).ready(function(){
         margin: 10,
         nav: true,
         dots: false,
+        center: true,
+        responsiveClass: true,
         navText: [
             '<i class="fa fa-angle-left"></i>',
             '<i class="fa fa-angle-right"></i>'
