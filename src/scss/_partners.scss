@@ -18,6 +18,10 @@
         background-color: #b1b1b1;
         border-radius: 50%;
         margin: auto;
+
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 15px;
+        }
     }
 }
     

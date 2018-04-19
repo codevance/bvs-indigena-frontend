@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6 {
 .published {
     font-size: 12px;
     color: #9FB694;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 10px;
+    }
 }
 
 // Style

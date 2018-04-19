@@ -13,4 +13,9 @@ select.form-control {
     box-shadow: none;
     padding: 5px 30px;
     background-color: #fff;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 16px;
+        padding: 5px 20px;
+    }
 }

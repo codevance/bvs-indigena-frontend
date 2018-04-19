@@ -1,12 +1,21 @@
 .post {
     width: 70%;
     margin: 100px auto 150px auto;
+
+    @include media-breakpoint-down(xs) {
+        width: 100%;
+        margin: 50px auto 50px auto;
+    }
     
     .post-text {
         text-align: justify;
         margin-top: 20px;
         font-size: 16px;
         color: #666A63;
+
+        @include media-breakpoint-down(xs) {
+            font-size: 14px;
+        }
     }
     
     .figure {
@@ -24,6 +33,10 @@
         font-size: 18px;
         font-weight: 700;
         margin: 40px 0 0 0;
+
+        @include media-breakpoint-down(xs) {
+            margin-top: 20px;
+        }
     }
 }
 
@@ -32,4 +45,8 @@
     color: #4c6438;
     font-weight: 700;
     position: relative;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 20px;
+    }
 }
