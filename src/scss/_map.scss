@@ -7,6 +7,12 @@
     height: 450px;
     position: relative;
 
+    @include media-breakpoint-down(xs) {
+        margin-top: 70px;
+        margin-right: 0;
+        height: 350px;
+    }
+
     .sm-title {
         position: absolute;
         top: -12%;
@@ -17,6 +23,12 @@
         font-weight: 700;
         padding-bottom: 13px;
 
+        @include media-breakpoint-down(xs) {
+            left: 0;
+            top: -10.2%;
+            font-size: 20px;
+        }
+
         &:after {
             border-radius: 5px;
         }        
@@ -25,6 +37,11 @@
     img {
         width: 480px;
         height: auto;
+        margin-top: 50px;
+
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+        }
     }
 
     .photo-info {
@@ -46,6 +63,14 @@
         top: 50px;
         z-index: 1;
         right: -250px;
+
+        @include media-breakpoint-down(xs) {
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding: 30px 20px;
+            height: 100%;
+        }
         
         &:after {
             background-color: #95b515;

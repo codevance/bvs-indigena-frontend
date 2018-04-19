@@ -52,6 +52,10 @@
 
             .nav-link {
                 color: $green-grayish;
+
+                @include media-breakpoint-down(xs) {
+                    padding: 0 0 5px 0;
+                }
             }
 
             &:hover,

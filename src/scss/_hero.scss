@@ -35,6 +35,13 @@
         font-size: 24px;
         color: $white;
         width: 20%;
+
+        @include media-breakpoint-down(xs) {
+            margin-left: 20px;
+            margin-top: 30px;
+            font-size: 20px;
+            width: 60%;
+        }
     }
 
     .search {
@@ -52,10 +59,52 @@
             font-size: 35px;
             font-weight: 700;
             margin: 0;
+
+            @include media-breakpoint-down(xs) {
+                font-size: 21px;
+            }
         }
 
         p {
             margin: 0;
+
+            @include media-breakpoint-down(xs) {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+
+        .form-group {
+            padding-right: 0;
+
+            @include media-breakpoint-down(xs) {
+                padding-right: 15px;
+            }
+
+            .form-control {
+                border-radius: 3px 0 0 3px !important;
+
+                @include media-breakpoint-down(xs) {
+                    border-radius: 3px !important;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .hero-btn {
+            padding-left: 0;
+
+            @include media-breakpoint-down(xs) {
+                padding-left: 15px;
+            }
+
+            .btn {
+                border-radius: 0 0.15rem 0.15rem 0;
+
+                @include media-breakpoint-down(xs) {
+                    border-radius: 0.15rem
+                }
+            }
         }
     }
 }
@@ -77,6 +126,11 @@
         color: $white;
         position: relative;
 
+        @include media-breakpoint-down(xs) {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
         &:after {
             content: " ";
             transition: all 200ms ease-in-out;
@@ -96,7 +150,17 @@
 
             &:after {
                 width: 25%;
+
+                @include media-breakpoint-down(xs) {
+                    width: 40%;
+                }
             }
+        }
+    }
+
+    span {
+        @include media-breakpoint-down(xs) {
+            display: none;
         }
     }
 }

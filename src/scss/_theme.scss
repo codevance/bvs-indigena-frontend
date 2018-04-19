@@ -6,6 +6,10 @@
     width: 100%;
     position: relative;
 
+    @include media-breakpoint-down(xs) {
+        margin-top: 50px;
+    }
+
     .theme-title {
         border-bottom: 0.5px solid #90AA83;
         padding-bottom: 5px;
