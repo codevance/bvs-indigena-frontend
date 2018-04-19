@@ -57,15 +57,15 @@
         margin-top: 50px;
 
         @include media-breakpoint-down(md) {
-            width: 350px !important;
-            height: auto;
+            width: 90% !important;
+            height: 100%;
             margin-top: 20px;
         }
 
         @include media-breakpoint-down(lg) {
             position: absolute;
-            left: 7%;
-            top: 5%;
+            left: 10%;
+            top: 0;
             margin: 0;
             width: 450px;
         }
