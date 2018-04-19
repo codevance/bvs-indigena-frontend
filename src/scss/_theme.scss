@@ -10,6 +10,12 @@
         margin-top: 50px;
     }
 
+    @include media-breakpoint-down(md) {
+        .container {
+            padding: 0 !important;
+        }
+    }
+
     .theme-title {
         border-bottom: 0.5px solid #90AA83;
         padding-bottom: 5px;
