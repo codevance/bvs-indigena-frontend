@@ -1,13 +1,13 @@
-.post {
-    width: 70%;
+article.post {
     margin: 100px auto 150px auto;
+    width: 70%;
 
     @include media-breakpoint-down(xs) {
-        width: 100%;
         margin: 50px auto 50px auto;
+        width: 100%;
     }
     
-    .post-text {
+    p {
         text-align: justify;
         margin-top: 20px;
         font-size: 16px;
@@ -17,18 +17,42 @@
             font-size: 14px;
         }
     }
-    
+
     .figure {
         width: 100%;
         height: auto;
+        margin: 50px 0;
         
         .figure-caption {
             color: #9fb694;
             font-size: 12px;
         }
     }
-    
-    .post-subtitle {
+
+    h2 {
+        font-size: 22px;
+        color: #4c6438;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 50px;
+
+        &:after {
+            content: " ";
+            background-color: #891812;
+            position: absolute;
+            border-radius: 3px;
+            height: 15px;
+            width: 60px;
+            top: -25px;
+            left: 0;
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 20px;
+        }
+    }
+
+    h3 {
         color: #4c6438;
         font-size: 18px;
         font-weight: 700;
@@ -37,16 +61,5 @@
         @include media-breakpoint-down(xs) {
             margin-top: 20px;
         }
-    }
-}
-
-.post-title {
-    font-size: 22px;
-    color: #4c6438;
-    font-weight: 700;
-    position: relative;
-
-    @include media-breakpoint-down(xs) {
-        font-size: 20px;
     }
 }

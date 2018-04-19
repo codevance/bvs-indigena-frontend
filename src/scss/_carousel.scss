@@ -1,0 +1,63 @@
+.owl-carousel {
+    padding-top: 70px;
+
+    .item {
+        background-size: cover;
+        position: relative;
+        display: block;
+        height: 160px;
+        width: 150px;
+        z-index: 1;
+
+        &:after {
+            background-color: #183D03;
+            position: absolute;
+            transition: 500ms;
+            opacity: 0.5;
+            z-index: 1;
+            content: '';
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+
+        .owl-title {
+            transform: translateY(-50%);
+            text-decoration: none;
+            text-align: center;
+            position: absolute;
+            margin-right: -50%;
+            font-weight: 700;
+            font-size: 13px;
+            color: $white;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            z-index: 2;
+        }
+    }
+
+    .owl-nav {
+        position: absolute;
+        top: 59%;
+        left: 0;
+        right: 0;
+
+        > .owl-next,
+        > .owl-prev {
+            position: absolute;
+            font-size: 20px;
+            color: $white;
+            bottom: auto;
+        }
+
+        .owl-prev {
+            left: -30px;
+        }
+
+        .owl-next {
+            right: -30px;
+        }
+    }
+}
