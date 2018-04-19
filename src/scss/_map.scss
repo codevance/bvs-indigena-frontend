@@ -7,10 +7,15 @@
     height: 450px;
     position: relative;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
         margin-top: 70px;
         margin-right: 0;
         height: 350px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        margin-top: 70px;
+        width: 100%;
     }
 
     .sm-title {
@@ -23,10 +28,22 @@
         font-weight: 700;
         padding-bottom: 13px;
 
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(md) {
             left: 0;
             top: -10.2%;
             font-size: 20px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 24px;
+            top: -9%;
+            left: 0;
+        }
+
+        @include media-breakpoint-only(xl) {
+            font-size: 31px;
+            top: -11%;
+            left: 19%;
         }
 
         &:after {
@@ -39,8 +56,18 @@
         height: auto;
         margin-top: 50px;
 
-        @include media-breakpoint-down(xs) {
-            width: 100%;
+        @include media-breakpoint-down(md) {
+            width: 350px !important;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            position: absolute;
+            left: 7%;
+            top: 5%;
+            margin: 0;
+            width: 450px;
         }
     }
 
@@ -64,12 +91,17 @@
         z-index: 1;
         right: -250px;
 
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(md) {
             top: 0;
             right: 0;
             width: 100%;
             padding: 30px 20px;
             height: 100%;
+        }
+
+        @include media-breakpoint-down(lg) {
+            top: 0;
+            right: 0;
         }
         
         &:after {

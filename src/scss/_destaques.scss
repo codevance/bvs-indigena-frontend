@@ -34,6 +34,7 @@
         @include media-breakpoint-down(xs) {
             height: 350px;
             padding-top: 150px;
+            position: relative;
         }
 
         .featured-content {
@@ -44,6 +45,8 @@
 
             @include media-breakpoint-down(xs) {
                 padding: 0 15px;
+                position: absolute;
+                bottom: 0;
             }
         }
     }
@@ -85,7 +88,7 @@
         margin-bottom: 20px;
         border-bottom: 0.5px solid #90AA83;
 
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(md) {
             margin-top: 30px;
         }
 

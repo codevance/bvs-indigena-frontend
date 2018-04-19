@@ -25,6 +25,10 @@
         margin-top: -10px;
         height: auto;
         width: 80px;
+
+        @include media-breakpoint-only(xs) {
+            margin-top: 20px;
+        }
     }
 
     .hero-title {
@@ -35,12 +39,24 @@
         font-size: 24px;
         color: $white;
         width: 20%;
-
-        @include media-breakpoint-down(xs) {
+        
+        @include media-breakpoint-only(xs) {
             margin-left: 20px;
             margin-top: 30px;
             font-size: 20px;
             width: 60%;
+        }
+        
+        @include media-breakpoint-only(sm) {
+            width: 50%;
+        }
+        
+        @include media-breakpoint-only(md) {
+            width: 40%;
+        }
+        
+        @include media-breakpoint-only(lg) {
+            width: 30%;
         }
     }
 
@@ -159,7 +175,7 @@
     }
 
     span {
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(sm) {
             display: none;
         }
     }

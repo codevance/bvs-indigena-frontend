@@ -8,7 +8,7 @@
     }
 
     .theme-header {
-        border-bottom: 0.5px solid #90AA83;
+        border-bottom: 1px solid #90AA83;
 
         @include media-breakpoint-down(xs) {
             position: relative;
