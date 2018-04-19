@@ -8,6 +8,12 @@
     width: 100%;
     position: relative;
 
+    @include media-breakpoint-down(md) {
+        .container {
+            padding: 0 !important;
+        }
+    }
+
     .se-title {
         text-transform: uppercase;
         color: $yellow-pure;

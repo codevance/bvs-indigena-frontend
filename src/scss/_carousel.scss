@@ -2,11 +2,12 @@
     padding-top: 70px;
 
     .item {
+        background-position: center;
         background-size: cover;
         position: relative;
+        overflow: hidden;
         display: block;
         height: 160px;
-        width: 150px;
         z-index: 1;
 
         &:after {
@@ -16,10 +17,10 @@
             opacity: 0.5;
             z-index: 1;
             content: '';
-            bottom: 0;
-            right: 0;
-            left: 0;
-            top: 0;
+            bottom: -1px;
+            right: -1px;
+            left: -1px;
+            top: -1px;
         }
 
         .owl-title {
