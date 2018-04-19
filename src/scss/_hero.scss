@@ -93,7 +93,7 @@
         .form-group {
             padding-right: 0;
 
-            @include media-breakpoint-down(xs) {
+            @include media-breakpoint-down(sm) {
                 padding-right: 15px;
             }
 
@@ -110,14 +110,14 @@
         .hero-btn {
             padding-left: 0;
 
-            @include media-breakpoint-down(xs) {
+            @include media-breakpoint-down(sm) {
                 padding-left: 15px;
             }
 
             .btn {
                 border-radius: 0 0.15rem 0.15rem 0;
 
-                @include media-breakpoint-down(xs) {
+                @include media-breakpoint-down(sm) {
                     border-radius: 0.15rem
                 }
             }
