@@ -99,6 +99,7 @@
 
             .form-control {
                 border-radius: 3px 0 0 3px !important;
+                border: none;
 
                 @include media-breakpoint-down(xs) {
                     border-radius: 3px !important;
