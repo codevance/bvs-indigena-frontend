@@ -21,29 +21,29 @@
     .sm-title {
         position: absolute;
         top: -12%;
-        left: 50%;
+        left: 0%;
         right: 0;
         color: #95b515;
         font-size: 35px;
         font-weight: 700;
         padding-bottom: 13px;
-
-        @include media-breakpoint-down(md) {
-            left: 0;
-            top: -10.2%;
-            font-size: 20px;
-        }
-
-        @include media-breakpoint-down(lg) {
-            font-size: 24px;
-            top: -9%;
-            left: 0;
-        }
-
+        text-transform: uppercase;
+        width: 100vw;
+        
         @include media-breakpoint-only(xl) {
             font-size: 31px;
             top: -11%;
-            left: 19%;
+            left: 0%;
+        }
+        
+        @include media-breakpoint-down(lg) {
+            font-size: 24px;
+            top: -9%;
+        }
+        
+        @include media-breakpoint-down(md) {
+            top: -10.2%;
+            font-size: 20px;
         }
 
         &:after {
@@ -79,7 +79,7 @@
     }
 
     .sm-info {
-        background-image: url(../images/map2.svg);
+        background-image: url(../images/map2.png);
         background-size: cover;
         padding: 50px 30px 120px 80px;
         width: 450px;        
@@ -125,6 +125,10 @@
         .info-list {
             padding-left: 15px;
             margin-top: 30px;
+            
+            a {
+                color: white;
+            }
         }
     }
 }

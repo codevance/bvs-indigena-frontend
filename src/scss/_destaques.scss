@@ -25,7 +25,7 @@
     }
 
     .featured {
-        background-image: url(../images/destaques1.svg);
+        background-image: url(../images/destaques1.png);
         background-size: cover;
         width: 100%;
         height: auto;
@@ -56,10 +56,18 @@
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 0px;
+        
+        a {
+            color: #fff;
 
-        @include media-breakpoint-down(xs) {
-            margin-top: 15px;
-            font-size: 16px;
+            &:hover {
+                text-decoration: none;
+            }
+
+            @include media-breakpoint-down(xs) {
+                margin-top: 15px;
+                font-size: 16px;
+            }
         }
     }
 
@@ -96,9 +104,23 @@
             padding-bottom: 25px;
         }
 
+        img {
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
         .fc-title {
             margin-top: 10px;
             font-size: 18px;
+        
+            a {
+                color: black;
+    
+                &:hover {
+                    text-decoration: none;
+                }
+            }
 
             @include media-breakpoint-only(lg) {
                 font-size: 16px;
@@ -108,57 +130,14 @@
         .fc-text {
             margin-top: 0;
             padding-bottom: 0;
+            max-width: 100%;
+
+            @include media-breakpoint-down(lg) {
+                margin-top: 10px;
+            }
 
             @include media-breakpoint-only(lg) {
                 font-size: 13px;
-            }
-        }
-    }
-}
-
-.pagination {
-    .page-item {
-        color: #90AA83;
-        font-size: 14px;
-        padding: 0 2px;
-
-        @include media-breakpoint-down(md) {
-            &:first-child {
-                margin-left: auto;
-            }
-
-            &:last-child {
-                margin-right: auto;
-            }
-        }
-        
-        &:first-child,
-        &:last-child {
-            .page-link {
-                color: #D2DDCE;
-                border: none;
-                font-size: 22px;
-                margin-top: -6px;
-    
-                &:hover {
-                    color: #71B42D;
-                    background-color: transparent;
-                }
-            }
-        }
-
-        .page-link {
-            color: #90AA83;
-            font-size: 14px;
-            border: none;
-            padding: 6px 4px;
-
-            &:focus {
-                box-shadow: none;
-            }
-            
-            &:hover {
-                background-color: transparent;
             }
         }
     }
