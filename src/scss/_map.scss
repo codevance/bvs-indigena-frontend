@@ -1,34 +1,21 @@
 .section-map {
-    background-color: #b2ed54;
-    margin-top: 120px;
     text-align: center;
-    margin-right: 400px;
-    width: auto;
-    height: 450px;
     position: relative;
+    padding: 100px 0;
+    width: auto;
 
     @include media-breakpoint-down(md) {
-        margin-top: 70px;
-        margin-right: 0;
-        height: 350px;
-    }
-
-    @include media-breakpoint-down(lg) {
-        margin-top: 70px;
-        width: 100%;
+        padding-bottom: 0;
     }
 
     .sm-title {
-        position: absolute;
-        top: -12%;
-        left: 0%;
-        right: 0;
         color: #95b515;
         font-size: 35px;
         font-weight: 700;
         padding-bottom: 13px;
         text-transform: uppercase;
-        width: 100vw;
+        position: relative;
+        z-index: 2;
         
         @include media-breakpoint-only(xl) {
             font-size: 31px;
@@ -47,56 +34,78 @@
         }
 
         &:after {
-            border-radius: 5px;
+            background-color: #95b515;
+            height: 4px;
         }        
     }
 
-    img {
-        width: 480px;
-        height: auto;
-        margin-top: 50px;
+    .map-container {
+        background-color: #e9f9ce;
+        position: relative;
+        width: 80%;
 
         @include media-breakpoint-down(md) {
-            width: 90% !important;
-            height: 100%;
-            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    img {
+        display: none;
+    }
+
+    .svg {
+        transform: translateY(50px);
+        max-width: 575px;
+        height: auto;
+        width: 100%;
+
+        @include media-breakpoint-down(md) {
+            transform: translateY(0);
+            margin: 30px auto;
         }
 
-        @include media-breakpoint-down(lg) {
-            position: absolute;
-            left: 10%;
-            top: 0;
-            margin: 0;
-            width: 450px;
+        // Todas regiões
+        .regiao:hover path,
+        .regiao.active path {
+            fill: #95b514
+        }
+
+        // .RegiaoNorte { fill: #b7c199 }       // Região Norte
+        // .RegiaoNordeste { fill: #b7c199 }    // Região Nordeste
+        // .RegiaoCentroOeste { fill: #b7c199 } // Região Centro-Oeste
+        // .RegiaoSudeste { fill: #b7c199 }     // Região Sudeste
+        // .RegiaoSul { fill: #b7c199 }         // Região Sul
+
+        path {
+            transition: fill 100ms ease-in-out;
+            fill: #b7c199;
         }
     }
 
     .photo-info {
-        width: 450px !important;
         position: absolute;
+        height: 500px;
+        width: 500px;
+        right: -200px;
         top: 50px;
-        right: -250px;
     }
 
     .sm-info {
         background-image: url(../images/map2.png);
         background-size: cover;
-        padding: 50px 30px 120px 80px;
-        width: 450px;        
+        width: 500px;
+        height: 500px;
         color: white;
         font-size: 14px;
         text-align: left;
         position: absolute;
         top: 50px;
         z-index: 1;
-        right: -250px;
+        right: -200px;
 
         @include media-breakpoint-down(md) {
-            top: 0;
-            right: 0;
+            position: relative;
             width: 100%;
-            padding: 30px 20px;
-            height: 100%;
         }
 
         @include media-breakpoint-down(lg) {
@@ -105,15 +114,15 @@
         }
         
         &:after {
-            background-color: #95b515;
             content: '';
+            background-color: #95b515;
             position: absolute;
-            left: 0;
-            top: 0;
+            opacity: 0.85;
+            z-index: -1;
             bottom: 0;
             right: 0;
-            opacity: 0.87;
-            z-index: -1;
+            left: 0;
+            top: 0;
         }
 
         .info-title {
@@ -128,6 +137,21 @@
             
             a {
                 color: white;
+            }
+        }
+
+        .regiao {
+            transition: opacity 200ms ease;
+            position: absolute;
+            padding: 50px;
+            opacity: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+
+            &.active {
+                opacity: 1;
             }
         }
     }

@@ -27,4 +27,20 @@ $(document).ready(function(){
             1500: { items: 7 }
         }
     });
+
+    // dados das regiões
+    var json = {}
+
+    // regioões
+    $('body').on('click', 'g.regiao', function(){
+        var regiao = $(this).data('regiao');
+
+        // ativa região no mapa
+        $('#mapa-brasil').find('.regiao').removeClass('active');
+        $(this).addClass('active');
+
+        // exibe detalhes da região
+        $('.sm-info .regiao').removeClass('active');
+        $('#' + regiao).addClass('active');
+    })
 });

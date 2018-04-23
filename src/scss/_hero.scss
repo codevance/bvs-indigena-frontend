@@ -62,6 +62,10 @@
 
     .form-group {
         margin-bottom: 0;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 10px;
+        }
     }
 
     .search {

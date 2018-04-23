@@ -9,8 +9,10 @@
     position: relative;
 
     @include media-breakpoint-down(md) {
+        margin-top: 0;
+
         .container {
-            padding: 0 !important;
+            padding: 0;
         }
     }
 
