@@ -78,6 +78,7 @@
                     font-size: 16px;
                     border: none;
                     padding: 5px;
+                    color: #90AA83;
 
                     &:hover {
                         background-color: #e9ecef;
@@ -116,5 +117,29 @@
 
     nav {
         margin: auto;
+    }
+}
+
+.pagination {
+    color: #90AA83;
+    font-size: 14px;
+    align-items: baseline;
+
+    .page-link {
+        border: none;
+        color: #90AA83;
+        background-color: transparent;
+    }
+
+    .page-item:first-child {
+        .page-link {
+            color: #D2DDCD;
+        }
+    }
+
+    .page-item:last-child {
+        .page-link {
+            color: #71B42D;
+        }
     }
 }
