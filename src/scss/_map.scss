@@ -125,6 +125,14 @@
             top: 0;
         }
 
+        img {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 1%;
+            left: 10%;
+        }
+
         .info-title {
             color: #ccff00;
             font-size: 30px;
@@ -137,6 +145,12 @@
             
             a {
                 color: white;
+                font-size: 18px;
+                line-height: 27px;
+
+                span {
+                    font-size: 13px;
+                }
             }
         }
 
