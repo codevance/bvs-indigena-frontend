@@ -1,5 +1,4 @@
 .theme {
-    background-image: linear-gradient(to top, #537143, #64A045);
     text-align: center;
     margin-top: 100px;
     height: auto;
@@ -31,6 +30,10 @@
             font-weight: 700;
             color: #EDC900;
             font-size: 30px;
+
+            &:after {
+                background-color: #EDC900;
+            }
         }
     }
 }
