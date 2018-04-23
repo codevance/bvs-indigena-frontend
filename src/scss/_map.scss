@@ -81,7 +81,7 @@
     .sm-info {
         background-image: url(../images/map2.png);
         background-size: cover;
-        padding: 50px 30px 120px 80px;
+        padding: 50px 30px 90px 80px;
         width: 450px;        
         color: white;
         font-size: 14px;
@@ -114,6 +114,14 @@
             right: 0;
             opacity: 0.87;
             z-index: -1;
+        }
+
+        img {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 1%;
+            left: 10%;
         }
 
         .info-title {
