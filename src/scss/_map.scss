@@ -49,7 +49,7 @@
         }
     }
 
-    img {
+    img.svg {
         display: none;
     }
 
@@ -65,9 +65,11 @@
         }
 
         // Todas regiões
-        .regiao:hover path,
-        .regiao.active path {
-            fill: #95b514
+        .regiao {
+            &:hover path,
+            &.active path {
+                fill: #95b514
+            }
         }
 
         // .RegiaoNorte { fill: #b7c199 }       // Região Norte
@@ -125,12 +127,22 @@
             top: 0;
         }
 
-        img {
-            width: 25px;
-            height: 25px;
+        .pin {
+            background-color: rgba(#ccff00, 0.4);
+            border-radius: 50%;
             position: absolute;
-            top: 1%;
-            left: 10%;
+            margin-left: -50px;
+            margin-top: 4px;
+            padding: 8px;
+
+            &:after {
+                content: '';
+                background-color: rgba(#ccff00, 0.7);
+                border-radius: 50%;
+                display: block;
+                height: 10px;
+                width: 10px;
+            }
         }
 
         .info-title {
@@ -156,8 +168,8 @@
 
         .regiao {
             transition: opacity 200ms ease;
+            padding: 50px 50px 50px 100px;
             position: absolute;
-            padding: 50px;
             opacity: 0;
             bottom: 0;
             right: 0;

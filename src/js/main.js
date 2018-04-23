@@ -32,7 +32,7 @@ $(document).ready(function(){
     var json = {}
 
     // regioões
-    $('body').on('click', 'g.regiao', function(){
+    $('body').on('click', '#mapa-brasil .regiao', function(){
         var regiao = $(this).data('regiao');
 
         // ativa região no mapa
