@@ -9,6 +9,11 @@ import 'bootstrap'
 import 'owl.carousel2'
 import './global-svg.js'
 
+$('body').append('<style>.hero.opened { min-height: ' + $('.hero .content-wrapper').height() + 'px; }</style>')
+$('#toggle-search').on('click', function(){
+    $('.hero').toggleClass('opened')
+})
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         loop: true,
@@ -67,7 +72,16 @@ timeline
         duration: duration,
         offset: 0,
     })
-    .pause()
+    if($(window).width() < 768) {
+        timeline.add({
+            targets: '.hero',
+            height: 0,
+            easing: 'easeInOutQuad',
+            duration: duration,
+            offset: 0,
+        })
+    }
+    timeline.pause()
 
 let h = $('.hero').outerHeight()
 let pos = 0
@@ -77,7 +91,7 @@ $('body').css('padding-top', h + 50)
 
 $(window).on('scroll', function (event) {
 
-    y = $(this).scrollTop() * 2
+    y = $(this).scrollTop()
 
     if (y > 0 && y <= h) {
         pos = (y * duration) / h

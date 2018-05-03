@@ -1,12 +1,15 @@
 .hero {
+    transition: min-height 300ms ease;
     background-image: url(../images/hero.png);
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     position: fixed;
+    min-height: 0;
     height: auto;
     width: 100%;
     z-index: 89;
-    top: 53px;
+    top: 46px;
 
     &:after {
         @include gradient-y(#318107, #194104);
